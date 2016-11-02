@@ -35,7 +35,7 @@ CREATE TEMP TABLE broker_sales (
 );
 
 \echo '\n\n\n NO OPTIONS (defaults to DELIMITER E''\\t'')'
-\COPY trec.broker_sales FROM 'data.txt';
+\COPY broker_sales FROM 'data.txt';
 
 \echo '\n\n\n FORMAT CSV, DELIMITER E''\\t'''
-\COPY trec.broker_sales FROM 'data.txt' WITH ( FORMAT CSV, DELIMITER E'\t');
+\COPY broker_sales FROM 'data.txt' WITH ( FORMAT CSV, DELIMITER E'\t');
